@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DFD8CA;
+    align-items: center;
+    padding :  0 200px;
+}
+.logo{
+    width: 120px ;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.list{
+    display: flex;
+    list-style: none;
+
+}
+.list li{
+    padding: 15px;
+    cursor: pointer;
+    color :black;
+    font-weight:bold  ;
+    
+}
+.list li:hover{
+    color: #5c0b0b;
+}
