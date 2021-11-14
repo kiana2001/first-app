@@ -22,7 +22,7 @@ import styles from "./Cards.module.css"
         return (
             <div className={styles.container}>
            
-        {this.state.phoneData.map(phone =><Card  key={phone.id} image={phone.image}  name={phone.name} cost={phone.cost}/>)}
+           {this.state.phoneData.map(phone =><Card  key={phone.id} image={phone.image}  name={phone.name} cost={phone.cost}/>)}
             </div>
         )
     }

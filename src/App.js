@@ -1,19 +1,17 @@
 import React from 'react';
-import Banner from './Component/Banner';
-import Navbar from './Component/Navbar';
-import Cards from './Component/Cards';
-import Search
- from './Component/Search';
- import Logo from './Component/Logo';
-import Footer from './Component/Footer';
+import Navbar from './component/Navbar';
+import Footer from './component/Footer';
+ import LandingPage from './component/LandingPage';
+import {Route , Switch} from "react-router-dom";
+import Products from './component/Products';
 const App = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Banner></Banner>
-            <Cards></Cards> 
-            <Search/>
-            <Logo/>
+            <Switch>
+            <Route path ="/products" component={Products}/>
+            <Route path ="/" component={LandingPage}/>
+          </Switch>
             <Footer/>
         </div>
     );
